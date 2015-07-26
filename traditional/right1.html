@@ -1,5 +1,5 @@
 <html><HEAD>
-<TITLE>¬ã¨s¥Ø¿ı¯Á¤Ş</TITLE>
+<TITLE>ç ”ç©¶ç›®éŒ„ç´¢å¼•</TITLE>
 <META content="text/html; charset=big5" http-equiv=Content-Type>
 <LINK REL="stylesheet" HREF="style.css" TYPE="text/css">
 
@@ -27,20 +27,20 @@
         $("#result").html("");
         if (mode == "brief") {
           if (result_set.length == 0) {
-              $("#result").html("<B>®Ñ¥Ø¤ºµL¬ÛÃö°O¿ı</B>");
+              $("#result").html("<B>æ›¸ç›®å…§ç„¡ç›¸é—œè¨˜éŒ„</B>");
           } else {
               for (var i = 0; i < result_set.length; i++) {
                   result = result_set[i]
-                  $("#result").append("<table width=378 cellspacing=1 cellpadding=3 border=0><tr valign=top><td width=40% bgcolor=#000000><font class=whi>§@ªÌ</font></td><td width=60% bgcolor=#000000><font class=whi>½g¦W</font></td></tr><tr><td bgcolor=#f0f0f0>"+ result[1] + "</td><td bgcolor=#f0f0f0>" + result[2] + "</td></tr></table>")
+                  $("#result").append("<table width=378 cellspacing=1 cellpadding=3 border=0><tr valign=top><td width=40% bgcolor=#000000><font class=whi>ä½œè€…</font></td><td width=60% bgcolor=#000000><font class=whi>ç¯‡å</font></td></tr><tr><td bgcolor=#f0f0f0>"+ result[1] + "</td><td bgcolor=#f0f0f0>" + result[2] + "</td></tr></table>")
               }
           }
         } else {
           if (result_set.length == 0) {
-              $("#result").html("<B>®Ñ¥Ø¤ºµL¬ÛÃö°O¿ı</B>");
+              $("#result").html("<B>æ›¸ç›®å…§ç„¡ç›¸é—œè¨˜éŒ„</B>");
           } else {
               for (var i = 0; i < result_set.length; i++) {
                   result = result_set[i]
-                  $("#result").append("<table width=378 cellspacing=1 cellpadding=3 border=0><TR valign=top><td bgcolor=#000000 width=58><font class=whi>§@ªÌ</font></td><td width=319 bgcolor=#f0f0f0>"+result[1]+"</td></TR><TR valign=top><td bgcolor=#000000><font class=whi>½g¦W</font></td><td bgcolor=#f0f0f0>"+result[2]+"</td></TR><TR valign=top><td bgcolor=#000000><font class=whi>¥X³B</font></td><td bgcolor=#f0f0f0>"+result[3]+"</td></TR><TR valign=top><td bgcolor=#000000><font class=whi>¥Xª©¦~¥÷</font></td><td bgcolor=#f0f0f0>"+(result.length > 4 ?result[4]:"")+"</td></TR><TR valign=top><td bgcolor=#000000><font class=whi>³Æµù</font></td><td bgcolor=#f0f0f0>"+(result.legnth > 5 ?result[5]:"")+"</td></TR><TR><td></td><td><hr></td></TR></table>");
+                  $("#result").append("<table width=378 cellspacing=1 cellpadding=3 border=0><TR valign=top><td bgcolor=#000000 width=58><font class=whi>ä½œè€…</font></td><td width=319 bgcolor=#f0f0f0>"+result[1]+"</td></TR><TR valign=top><td bgcolor=#000000><font class=whi>ç¯‡å</font></td><td bgcolor=#f0f0f0>"+result[2]+"</td></TR><TR valign=top><td bgcolor=#000000><font class=whi>å‡ºè™•</font></td><td bgcolor=#f0f0f0>"+result[3]+"</td></TR><TR valign=top><td bgcolor=#000000><font class=whi>å‡ºç‰ˆå¹´ä»½</font></td><td bgcolor=#f0f0f0>"+(result.length > 4 ?result[4]:"")+"</td></TR><TR valign=top><td bgcolor=#000000><font class=whi>å‚™è¨»</font></td><td bgcolor=#f0f0f0>"+(result.legnth > 5 ?result[5]:"")+"</td></TR><TR><td></td><td><hr></td></TR></table>");
               }
           }
         }
@@ -61,7 +61,7 @@
       <table width=100% cellspacing=0 cellpadding=0 border=0>
         <tr> 
           <td width=400 valign=top><br> 
-            <H1 align=left>¬ã¨s¥Ø¿ı¯Á¤Ş (·sª©)</H1>
+            <H1 align=left>ç ”ç©¶ç›®éŒ„ç´¢å¼• (æ–°ç‰ˆ)</H1>
 
 
             <table width=95% cellspacing=0 cellpadding=1 border=0>
@@ -69,25 +69,25 @@
               <td>
 
 <FORM>
-                  ½Ğ¿ï¾Ü¤U¦C¨ä¤¤¤@¶µÀË¯Á¤èªk:<BR>
+                  è«‹é¸æ“‡ä¸‹åˆ—å…¶ä¸­ä¸€é …æª¢ç´¢æ–¹æ³•:<BR>
 
 <table border="0" cellpadding="0" cellspacing="0" width=100%>
 <tr>
 <td width=15%></td>
 <td width=35%>
 	<input id="searchby_author" type=RADIO CHECKED name="searchby" value="author">
-	§@ªÌ
+	ä½œè€…
 </td><td width=35%>
 	<input id="searchby_title" type=RADIO name="searchby" value="title">
-	ÃöÁäµü
+	é—œéµè©
 </td><td width=15%></td></tr>
 </table>
         <P>
-	<STRONG>½Ğ¿é¤JÀË¯Áµü:</STRONG><BR>
+	<STRONG>è«‹è¼¸å…¥æª¢ç´¢è©:</STRONG><BR>
 	<INPUT id="keyword" type=TEXT name="input" size=40>
-	<INPUT name="index" type=button value="Åã¥Ü¯Á¤Ş" onclick="search($('#keyword').val(),document.getElementById('searchby_author').checked?1:2,'brief');">&nbsp;&nbsp;&nbsp;&nbsp
-	<INPUT name="detail" type=button value="Åã¥Ü¸Ô²Ó¤º®e" onclick="search($('#keyword').val(),document.getElementById('searchby_author').checked?1:2,'detailed');">&nbsp;&nbsp;&nbsp;&nbsp
-	<INPUT type=RESET value="²M°£">
+	<INPUT name="index" type=button value="é¡¯ç¤ºç´¢å¼•" onclick="search($('#keyword').val(),document.getElementById('searchby_author').checked?1:2,'brief');">&nbsp;&nbsp;&nbsp;&nbsp
+	<INPUT name="detail" type=button value="é¡¯ç¤ºè©³ç´°å…§å®¹" onclick="search($('#keyword').val(),document.getElementById('searchby_author').checked?1:2,'detailed');">&nbsp;&nbsp;&nbsp;&nbsp
+	<INPUT type=RESET value="æ¸…é™¤">
 	<P>
 
 </FORM>
@@ -107,7 +107,7 @@
               <tr> 
                 <td valign="top" align=right><img src="pic/right1.jpg" border=0 width="157" height="394"></td>
               </tr>
-<tr><td align=right><font class=copyright>ªá¥Û/©~·G&nbsp;</font></td></tr>  
+<tr><td align=right><font class=copyright>èŠ±çŸ³/å±…å»‰&nbsp;</font></td></tr>  
 
             </table>
           </td>
