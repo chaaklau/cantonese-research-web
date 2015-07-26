@@ -1,8 +1,8 @@
 <html><head>
-<TITLE>研究目錄索引</TITLE>
+<TITLE>嚙踝蕭s嚙諍選蕭嚙踝蕭嚙�</TITLE>
 <!-- by: bernard@bernardtsang.com -->
 
-<META content="text/html; charset=big5" http-equiv=Content-Type>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
 <LINK REL="stylesheet" HREF="style.css" TYPE="text/css">
 
 </head>
@@ -17,7 +17,7 @@
       <table width=100% cellspacing=0 cellpadding=0 border=0>
         <tr> 
           <td width=400 valign=top><br> 
-            <H1 align=left>研究目錄索引</H1> 
+            <H1 align=left>嚙踝蕭s嚙諍選蕭嚙踝蕭嚙�</H1> 
 
 
             <table width=95% cellspacing=0 cellpadding=1 border=0>
@@ -35,11 +35,11 @@
 
    print "<table width=378 cellpadding=3 cellspacing=1>\n";
    while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-	printf ("\t<TR valign=top><TD width=58 bgcolor=#000000><font class=whi>作者</font></td><td width=319 bgcolor=#f0f0f0>%s</td></TR>\n", $row["author_b5"]);
-	printf ("\t<TR valign=top><TD bgcolor=#000000><font class=whi>篇名</font></td><td bgcolor=#f0f0f0>%s</td></TR>\n", $row["title_b5"]);
-	printf ("\t<TR valign=top><TD bgcolor=#000000><font class=whi>出處</font></td><td bgcolor=#f0f0f0>%s</td></TR>\n", $row["source_b5"]);
-	printf ("\t<TR valign=top><TD bgcolor=#000000><font class=whi>出版年份</font></td><td bgcolor=#f0f0f0>%s</td></TR>\n", $row["year"]);
-	printf ("\t<TR valign=top><TD bgcolor=#000000><font class=whi>備註</font></td><td bgcolor=#f0f0f0>%s</td></TR>\n", $row["rem_b5"]);
+	printf ("\t<TR valign=top><TD width=58 bgcolor=#000000><font class=whi>嚙瑾嚙踝蕭</font></td><td width=319 bgcolor=#f0f0f0>%s</td></TR>\n", $row["author_b5"]);
+	printf ("\t<TR valign=top><TD bgcolor=#000000><font class=whi>嚙篇嚙磕</font></td><td bgcolor=#f0f0f0>%s</td></TR>\n", $row["title_b5"]);
+	printf ("\t<TR valign=top><TD bgcolor=#000000><font class=whi>嚙碼嚙畿</font></td><td bgcolor=#f0f0f0>%s</td></TR>\n", $row["source_b5"]);
+	printf ("\t<TR valign=top><TD bgcolor=#000000><font class=whi>嚙碼嚙踝蕭嚙羯嚙踝蕭</font></td><td bgcolor=#f0f0f0>%s</td></TR>\n", $row["year"]);
+	printf ("\t<TR valign=top><TD bgcolor=#000000><font class=whi>嚙複蛛蕭</font></td><td bgcolor=#f0f0f0>%s</td></TR>\n", $row["rem_b5"]);
    }
    print "</table>\n";
 
